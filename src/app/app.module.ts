@@ -6,9 +6,6 @@ import {RouterModule, Routes} from "@angular/router";
 import {mainRoutes} from "./main.routes";
 import {ScrollToModule} from "ng2-scroll-to";
 
-const _routes: Routes = [
-  ...mainRoutes
-];
 
 @NgModule({
   declarations: [
@@ -17,10 +14,9 @@ const _routes: Routes = [
   imports: [
     GlobalImportsModule,
     PagesModule,
-    RouterModule.forRoot(_routes, {useHash: true}),
-
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

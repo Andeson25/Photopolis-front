@@ -8,11 +8,16 @@ import {mainRoutes} from "../../main.routes";
 import {BrowserModule} from "@angular/platform-browser";
 
 
+const _routes: Routes = [
+  ...mainRoutes
+];
+
 
 
 @NgModule({
   imports: [
     ScrollToModule.forRoot(),
+    RouterModule.forRoot(_routes, {useHash: true}),
   ],
   exports: [
     BrowserModule,
