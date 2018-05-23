@@ -6,8 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+  dateStr : string=new Date().toISOString().substring(0,10);
+  constructor() {
 
-  constructor() { }
+  }
+
+  getDate(date :string){
+    console.log(date);
+  }
 
   ngOnInit() {
   }
